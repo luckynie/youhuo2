@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- https://www.yohobuy.com/product/search/suggest?callback=jQuery112409899427905864819_1543627984631&return_type=jsonp&keyword=%E5%8C%85&_=1543627984632 -->
+    <input type="text" id="schInput">
+    <button id="schBtn">搜索</button><br/>
+    <ul class="list">
+
+    </ul>
+</body>
+</html>
+<script>
+function topSearch(){
+		var search = document.getElementById("schInput");
+		var btn = document.getElementById("schBtn");
+	 	/*searchList = $id("topSearch_list");*/
+	  	search.onkeyup = function(){
+			  var kw = this.value;
+			  //console.log(kw) 
+	  		/*$(".sch_drop").css({"border":"1px solid #E32C24","padding":"5px 10px 10px"})*/
+	  		//$(".sch_drop").css("display","block")
+	  		$.ajax({
+				type:"get",
+				url:"https://www.yohobuy.com/product/search/suggest?&callback=fn&keyword="+kw,
+				async:true,
+				dataType:"jsonp",
+				jsonpCallback:"fn" 
+			});
+			if($(".list").html()===""){
+				$(".list").hide();
+			}
+	  	}
+	  	
+	  	$(".list").on("click","li",function(){
+	  		$("#schInput").val($(this).html());
+	  		$(".list").css("display","none");
+	  		/*$(".sch_drop").hide();*/
+	  	})  
+	  		 
+	} 	
+	function fn(msg){
+		console.log(msg);
+		var arr = msg.data;
+		var str = "";
+		for(var i = 0;i < arr.length;i++){
+			str +=` <li>
+						<a>
+							<span class="searchvalue">${arr[i].keyword}</span>
+							<span class="valuenum">约${arr[i].count}个商品</span>
+						</a>
+					</li>`;
+		}
+		$(".list").html(str);
+	}
+topSearch();
+</script>
