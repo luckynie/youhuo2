@@ -65,8 +65,8 @@ function topSearch(){
       })
       
       $(".search-suggest").on("click","li",function(){
-          $(".search-key").val($(this).html());
-          $(".search-suggest").css("display","none"); 
+          $(".search-key").val($(this).data("keyword"));
+          $(".search-suggest").hide(); 
       })     
 }
 function fn(msg){
@@ -74,7 +74,7 @@ function fn(msg){
     var arr = msg.data;
     var str = "";
     for(var i = 0;i < arr.length;i++){
-        str +=` <li>
+        str +=` <li data-keyword="${arr[i].keyword}">
                     <a>
                         <span class="searchvalue left">${arr[i].keyword}</span>
                         <span class="valuenum right">约${arr[i].count}个商品</span>
@@ -88,7 +88,7 @@ topSearch();
 function showDownloadBox(){ 
     //console.log($(".qrcode-hover-box"),1);
     $(".layer-box").mouseenter(function(){ 
-        console.log(1)
+        //console.log(1)
         $(this).css("opacity",1); 
     })
     $(".layer-box").mouseleave(function(){

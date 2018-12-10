@@ -1,3 +1,116 @@
 .home-page {
   width: 1150px;
   margin: 10px auto 0; }
+  .home-page .floor-header {
+    margin: 50px 0 30px;
+    position: relative; }
+    .home-page .floor-header .floor-title {
+      margin: 0 auto;
+      width: 298px;
+      height: 31px;
+      line-height: 31px;
+      border: 1px solid #000;
+      font-size: 16px;
+      text-align: center; }
+    .home-page .floor-header .header-navs {
+      position: absolute;
+      padding: 10px 0;
+      top: 0;
+      right: 0;
+      font-size: 14px; }
+      .home-page .floor-header .header-navs span {
+        color: #333; }
+  .home-page .index-bannerWrap2 {
+    overflow: hidden; }
+    .home-page .index-bannerWrap2 .logo-brand {
+      width: 100%;
+      height: 164px;
+      overflow: hidden; }
+      .home-page .index-bannerWrap2 .logo-brand ul {
+        width: 998px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        justify-content: space-between; }
+        .home-page .index-bannerWrap2 .logo-brand ul li {
+          margin: 8px 8px 0 0;
+          width: 158px;
+          height: 74px;
+          line-height: 74px;
+          float: left;
+          text-align: center; }
+          .home-page .index-bannerWrap2 .logo-brand ul li img {
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle; }
+        .home-page .index-bannerWrap2 .logo-brand ul .brand-more {
+          font-size: 16px; }
+        .home-page .index-bannerWrap2 .logo-brand ul .logo-brand-switch {
+          position: relative;
+          background: url(../img/logo-brand-line.png) no-repeat 50%;
+          line-height: normal; }
+          .home-page .index-bannerWrap2 .logo-brand ul .logo-brand-switch .iconfont {
+            font-size: 24px;
+            position: absolute;
+            left: 50%;
+            color: #000; }
+          .home-page .index-bannerWrap2 .logo-brand ul .logo-brand-switch .prev {
+            top: 6px;
+            margin-left: -24px; }
+          .home-page .index-bannerWrap2 .logo-brand ul .logo-brand-switch .next {
+            bottom: 6px;
+            margin-left: 8px; }
+  .home-page .tpl-recommed {
+    width: 100%;
+    position: relative; }
+    .home-page .tpl-recommed a {
+      display: block; }
+      .home-page .tpl-recommed a img {
+        width: 100%;
+        height: 100%; }
+    .home-page .tpl-recommed .tpl-body {
+      margin-bottom: 8px; }
+      .home-page .tpl-recommed .tpl-body .tpl-nav {
+        width: 158px;
+        float: left;
+        overflow: hidden; }
+        .home-page .tpl-recommed .tpl-body .tpl-nav .tpl-keywords {
+          margin-bottom: 8px; }
+          .home-page .tpl-recommed .tpl-body .tpl-nav .tpl-keywords a {
+            margin-bottom: 8px;
+            height: 65px;
+            display: block; }
+            .home-page .tpl-recommed .tpl-body .tpl-nav .tpl-keywords a img {
+              width: 100%;
+              height: 100%;
+              display: block; }
+        .home-page .tpl-recommed .tpl-body .tpl-nav .tpl-category {
+          height: 192px;
+          padding: 10px 0;
+          background-color: #f8f8f8;
+          overflow: hidden; }
+          .home-page .tpl-recommed .tpl-body .tpl-nav .tpl-category a {
+            height: 32px;
+            line-height: 32px;
+            font-size: 12px;
+            float: left;
+            width: 50%;
+            text-align: center;
+            color: #000;
+            overflow: hidden; }
+          .home-page .tpl-recommed .tpl-body .tpl-nav .tpl-category a:hover {
+            text-decoration: underline; }
+      .home-page .tpl-recommed .tpl-body .tpl-brands {
+        width: 324px;
+        height: 432px;
+        float: left;
+        overflow: hidden;
+        margin-left: 8px; }
+      .home-page .tpl-recommed .tpl-body .tpl-types {
+        width: 498px;
+        float: left;
+        overflow: hidden;
+        margin-top: -8px; }
+        .home-page .tpl-recommed .tpl-body .tpl-types li {
+          float: left;
+          margin-left: 8px;
+          margin-top: 8px; }
