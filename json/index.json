@@ -6,28 +6,28 @@
             "keywordsSrc":["img/01b10f03e6ecc931a7ed806585b43fd019.jpg","img/01b13686ba559727938848e6eef60a1835.jpg","img/01e1f7ba761524878b5e318dd99e90234e.jpg"],
             "label":["卫衣","衬衫","针织衫","夹克","衬衫","防风外套","秋壳","AKOP","安妮陈","毛衣","大衣","MORE"],
             "src":"img/1/pic0.jpg",
-            "list":["img/1/pic.1","img/1/pic.2","img/1/pic.3","img/1/pic.4","img/1/pic.5","img/1/pic.6"]
+            "list":["img/1/pic1.jpg","img/1/pic2.jpg","img/1/pic3.jpg","img/1/pic4.jpg","img/1/pic5.jpg","img/1/pic6.jpg"]
         },
         {
             "title":"好店夯货",
-            "keywordsSrc":["img/2/s1","img/2/s2","img2/s3"],
+            "keywordsSrc":["img/2/s1.jpg","img/2/s2.jpg","img/2/s3.jpg"],
             "label":["牛仔裤","半身裙","休闲裤","连衣裙","运动裤","紧身裤","VANS","converse","李宁","斯凯奇","阿迪","MORE"],
             "src":"img/2/pic0.jpg",
-            "list":["img/2/pic.1","img/2/pic.2","img/2/pic.3","img/2/pic.4","img/2/pic.5","img/2/pic.6"]
+            "list":["img/2/pic1.jpg","img/2/pic2.jpg","img/2/pic3.jpg","img/2/pic4.jpg","img/2/pic5.jpg","img/2/pic6.jpg"]
         },
         {
             "title":"欧美",
             "keywordsSrc":["img/3/s1.jpg","img/3/s2.jpg","img/3/s3.jpg"],
             "label":["靴子","休闲/运动鞋","时装鞋","凉鞋/拖鞋","英伦靴","帆布鞋","皮鞋","UGG","达芙妮","红蜻蜓","珂卡芙","MORE"],
             "src":"img/3/pic0.jpg",
-            "list":["img/3/pic.1","img/3/pic.2","img/3/pic.3","img/4/pic.4","img/5/pic.5","img/6/pic.6"]
+            "list":["img/3/pic1.jpg","img/3/pic2.jpg","img/3/pic3.jpg","img/3/pic4.jpg","img/3/pic5.jpg","img/3/pic6.jpg"]
         },
         {
             "title":"休闲",
-            "keywordsSrc":["img/4/s1.jpg","img/4/s2.jpg","img/4/s3.jpg"],
+            "keywordsSrc":["img/4/s1.jpg","img/4/s2.jpg","img/4/s4.jpg"],
             "label":["双肩包","单肩包","斜挎","手提","腰包","链条包","帆布包","钱包","帽子","眼镜","配饰","MORE"],
             "src":"img/4/pic0.jpg",
-            "list":["img/4/pic.1","img/4/pic.2","img/4/pic.3","img/4/pic.4","img/4/pic.5","img/4/pic.6"]
+            "list":["img/4/pic1.jpg","img/4/pic2.jpg","img/4/pic3.jpg","img/4/pic4.jpg","img/4/pic5.jpg","img/4/pic6.jpg"]
         }
     ]
     
