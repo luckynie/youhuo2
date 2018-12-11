@@ -34,6 +34,7 @@ var swiper2 = new Swiper('.index-bannerWrap2 .swiper-container', {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
+    autoplay:true,
     loop: true,
     pagination: {
         el: '.swiper-pagination',

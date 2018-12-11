@@ -20,7 +20,10 @@ function showhide(){
         parent:".contain-third",
         children:".third-nav-wrapper"
     });
-
+    $(".func-area").nav({
+        parent:".go-cart",
+        children:".mini-cart-wrapper"
+    })
 }
 showhide();
 
