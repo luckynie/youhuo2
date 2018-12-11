@@ -10,7 +10,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   width: 990px;
   margin: 10px auto 0; }
   .home-page .floor-header {
-    margin: 50px 0 30px;
+    margin: 60px 0 40px;
     position: relative; }
     .home-page .floor-header .floor-title {
       margin: 0 auto;
@@ -190,3 +190,18 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
         font-size: 12px; }
     .home-page .commodity .commodity-list .commodity-brands {
       margin-left: -8px; }
+  .home-page .commodity .loading {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px; }
+    .home-page .commodity .loading a {
+      display: block;
+      height: 35px;
+      width: 120px;
+      margin: 0 auto 40px;
+      background-color: #000;
+      color: #fff;
+      font-size: 14px;
+      line-height: 35px;
+      text-align: center; }

@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_956665_wiug2fg1p3a.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_961381_zkd6u8lkivj.css">
+    <link rel="stylesheet" href="./css/listpage.css">
+    <title>listPage</title>
+</head>
+<body class="min-screen">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/jquery.nav.js"></script>
+    <!-- public-header-js -->
+    <div id="public-header" class="public-header">
+        <div class="header-topWrap clearfix">
+            <div class="center-content">
+                <div class="topcontent-L left">
+                    <span class="icon-hamburger"></span>
+                    <a href="girls.html">YOHO!BUY 有货</a>
+                    <ul class="yoho-group-list">
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YOHO!" data-cn="集团官网">YOHO!</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YOHO!BOYS" data-cn="男生潮流">YOHO!BOYS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YOHO!GIRLS" data-cn="女生潮流">YOHO!GIRLS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="Mars" data-cn="新鲜好去处">Mars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YO'HOOD" data-cn="潮流嘉年华">YO'HOOD</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topcontent-M left">
+                    <span class="exclamation-mark"></span>
+                    <a href="//www.yohobuy.com/help/detail?id=150&amp;contId=147" rel="nofollow" target="_blank">
+                        关于防诈骗的重要提醒
+                    </a>
+                </div>
+                <div class="topcontent-R right">
+                    <ul>
+                        <li id="loginBox">
+                            <span class="hi">Hi~</span>
+                            [ <a id="signin-url" href="login.html" class="loginbar" rel="nofollow">请登录</a> ]
+                            [ <a id="reg-url" href="register.html" class="registbar" rel="nofollow">免费注册</a> ]
+                        </li>
+                        <li class="myyoho" id="myYohoBox">
+                            <span class="tag-seprate">|</span>
+                            <a href="#" rel="nofollow">MY有货</a>
+                            <span class="icon-bottomarrow"></span>
+                            <div class="simple-user-center"></div>
+                        </li>
+                        <li class="myorder">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-papers"></span>
+                            <a href="shopcar.html" rel="nofollow">我的订单</a>
+                        </li>
+                        <li class="mycollect">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-heart"></span>
+                            <a href="shopcar.html" rel="nofollow">我的收藏</a>
+                        </li>
+                        <li class="message">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-mail"></span>
+                            <a href="#" rel="nofollow">消息</a>
+                        </li>
+                        <li class="help nav-drop-down-container">
+                            <span class="tag-seprate">|</span>
+                            <span class="iconfont">&#xe656;</span>
+                            <a href="#">客户服务</a>
+                            <ul class="nav-drop-down">
+                                <li>
+                                    <a href="//www.yohobuy.com/service/client" rel="nofollow" target="_blank">在线客服</a>
+                                </li>
+                                <li>
+                                    <a href="//www.yohobuy.com/help" rel="nofollow">帮助中心</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="we-chat download-code">
+                            <span class="tag-seprate">|</span>
+                            <span class="iconfont">&#xe620;</span>
+                            <a href="">关注有货</a>
+                            <div class="download-app-box">
+                                <div class="we-chat-img code-img"></div>
+                                <h5 class="qr-words">微信扫一扫</h5>
+                                <h5 class="qr-words">关注公众号，送球鞋</h5>
+                            </div>
+                        </li>
+                        <li class="phoneapp download-code" id="phoneApp">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-phone"></span>
+                            <a href="//www.yohobuy.com/download/app" rel="nofollow">手机版</a>
+                            <div class="download-app-box">
+                                <div class="qr-img code-img"></div>
+                                <h5 class="qr-words">下载手机客户端</h5>
+                                <h5 class="qr-more">
+                                    <a href="javascript:void(0);">更多客户端</a>
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-middlewrap clearfix">
+            <div class="center-content"> 
+                <h1 class="main-logo">
+                    <a href="girls.html" class="main-link" title="YOHO!BUY 有货-潮流服饰,潮流女装,潮流男装,时尚潮流购物网站"></a>
+                </h1>
+                <ul class="main-nav-list">
+                        <li class="boys">
+                                <h5 class="name-cn">
+                                    <a href="http://www.yohobuy.com/">男生</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="http://www.yohobuy.com/">BOYS</a>
+                                </h5>
+                        </li>
+                        <li class="girls cure">
+                                <h5 class="name-cn">
+                                    <a href="girls.html/">女生</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="girls.html/">GIRLS</a>
+                                </h5>
+                        </li>
+                        <li class="kids">
+                                <h5 class="name-cn">
+                                    <a href="http://www.yohobuy.com/kids/">潮童</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="http://www.yohobuy.com/kids/">KIDS</a>
+                                </h5>
+                        </li>
+                        <li class="lifestyle">
+                                <h5 class="name-cn">
+                                    <a href="//www.yohobuy.com/lifestyle/">创意生活</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="//www.yohobuy.com/lifestyle/">LIFE STYLE</a>
+                                </h5>
+                        </li>
+                </ul>
+                <div class="func-area">
+                    <ul class="search-suggest">
+                        <!-- <li>
+                            <a>
+                                <span class="searchvalue">a</span>
+                                <span class="valuenum">约57938个商品</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                    <!-- <ul class="search-suggest-history" style="display: none;"></ul> -->
+                    <div class="searchWrap">
+                        <form id="search-form">
+                            <!-- <input type="hidden" id="defaultsearch" placeholder="限时五折封！"> -->
+                            <input class="search-key" placeholder="限时五折封！" type="text" name="query" id="query-key" lang="zh-CN" x-webkit-grammar="builtin:translate" value="" maxlength="30">
+                            <a class="search-btn" href="javascript:topSearch();"></a>
+                        </form>
+                        <ul class="search-hot">
+                            <li>
+                                <a style="display: block;" href="girls.html" title="UNIFREE" target="_blank">
+                                    <span class="searchvalue">UNIFREE</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="girls.html" title="MATERIAL GIRL" target="_blank">
+                                    <span class="searchvalue">MATERIAL GIRL</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="girls.html" title="卫衣" target="_blank">
+                                    <span class="searchvalue">卫衣</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="//search.yohobuy.com?query=MO%26Co." title="MO&amp;Co." target="_blank">
+                                    <span class="searchvalue">MO&amp;Co.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="#" title="休闲/运动鞋" target="_blank">
+                                    <span class="searchvalue">休闲/运动鞋</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="//search.yohobuy.com?query=TYAKASHA" title="TYAKASHA" target="_blank">
+                                    <span class="searchvalue">TYAKASHA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="//search.yohobuy.com?query=%E4%BC%91%E9%97%B2%E8%A3%A4" title="休闲裤" target="_blank">
+                                    <span class="searchvalue">休闲裤</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="//search.yohobuy.com?query=LUNA%20LIMITED" title="LUNA LIMITED" target="_blank">
+                                    <span class="searchvalue">LUNA LIMITED</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="//search.yohobuy.com?query=%E6%AF%9B%E8%A1%A3" title="毛衣" target="_blank">
+                                    <span class="searchvalue">毛衣</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="display: block;" href="//search.yohobuy.com?query=%E5%A4%A7%E8%A1%A3" title="大衣" target="_blank">
+                                    <span class="searchvalue">大衣</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="go-cart">
+                        <a href="shopcar.html" rel="nofollow">
+                            <span class="iconfont ">&#xe6af;</span> 
+                        </a>
+                        <div class="mini-cart-wrapper">
+                            <div class="empty-cart">
+                                <h3>您的购物车暂无商品</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navWrap clearfix">
+            <div class="center-content">
+                <ul class="sub-girlsNav">
+                    <li>
+                        <a href="#">新品到着</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌一览</a>
+                    </li>
+                    <li class="contain-third">
+                        <a href="#">服饰</a>
+                        <div class="third-nav-wrapper">
+                            <div class="center-content">
+                                <dl class="category-list">
+                                    <dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci18-gd2.html">上装</a></h3>
+                                    </dt>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci55-gd2.html" class="hot">夹克</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci54-gd2.html" class="hot">卫衣</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci65-gd2.html" class="hot">衬衫</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci1208-gd2.html">风衣</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci70-gd2.html">T恤</a>
+                                    </dd>
+                                    <dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci25,31-gd2.html">下装</a></h3>
+                                    </dt>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci80-gd2.html">休闲裤</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci82-gd2.html" class="hot">牛仔裤</a>
+                                    </dd>
+                                </dl>
+                                <dl class="category-list">
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci83-gd2.html" class="hot">连衣裙</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="//www.yohobuy.com/list/ci94-gd2.html">半身裙</a>
+                                    </dd>
+                                    <dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/brands?gender=2,3">热门品牌</a></h3>
+                                    </dt>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/dustymini-1066.html\n">dusty mini</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/pass-41.html&#10;">pass</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/rococo-496.html&#10;">ROCOCO洛可可</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/shaoyaoju-3554.html">芍藥居少女原创设计</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/moussy-1512.html&#10;">MOUSSY</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/ledin-3552.html">LED’IN乐町</a>
+                                    </dd>
+                                </dl>
+                                <dl class="category-list">
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/chocoolate-1422.html&#10;">:CHOCOOLATE</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/sibylofno17-411.html&#10;">SIBYL OF NO.17</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/garfieldbyfun-1394.html&#10;">Garfield by fun</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/stussy-1292.html&#10;">Stussy</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/chuyu-32.html&#10;">初语</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://www.yohobuy.com/shop/a02-3528.html">a02</a>
+                                    </dd>
+                                </dl>
+                                <div class="show-detail show" data-code="d83255fda9418a22021f4c4f5b5b6702">
+                                    <a href="#"><img src="https://img11.static.yhbimg.com/yhb-img01/2018/10/11/13/011777ea11c27d416791fed6a97eef633e.jpg?imageView2/2/w/337/h/250/q/90"></a>
+                                    <a class="title" href="#">高街型搭LOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contain-third">
+                        <a href="#">鞋履</a>
+                        <div class="third-nav-wrapper">
+                            <div class="center-content">
+                                <dl class="category-list"><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci52-gd2.html">鞋履</a></h3>
+                                        </dt><dd>
+                                                <a href="//www.yohobuy.com/list/ci143-gd2.html" class="hot">休闲/运动鞋</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci135-gd2.html">靴子</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci129-gd2.html">时装鞋</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci141-gd2.html" class="hot">凉鞋/凉拖</a>
+                                            </dd><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/brands?gender=2,3">热门品牌</a></h3>
+                                        </dt><dd>
+                                                <a href="https://www.yohobuy.com/shop/vans-1284.html">VANS</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/ugg-3330.html&#10;">UGG</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/drmartens-1866.html&#10;">Dr.Martens</a>
+                                            </dd></dl><dl class="category-list"><dd>
+                                                <a href="https://www.yohobuy.com/shop/rickowens-1942.html">Rick Owens</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/beffon-952.html">BEFFON</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/xcollection-546.html&#10;">X COLLECTION</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/adidas-1258.html&#10;">adidas Originals</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/nbashoes-2316.html&#10;">NBA</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/reebok-1290.html&#10;">Reebok</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/teva-3480.html">TEVA</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/converse-1252.html&#10;">converse</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/joymario-564.html&#10;">JOY&amp;MARIO快乐玛丽</a>
+                                            </dd></dl><dl class="hide-list hide">
+                                        <dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci52-gd2.html">鞋履</a></h3>
+                                        </dt>
+                                            <dd>
+                                                <a href="//www.yohobuy.com/list/ci143-gd2.html" class="hot">休闲/运动鞋</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="//www.yohobuy.com/list/ci135-gd2.html">靴子</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="//www.yohobuy.com/list/ci129-gd2.html">时装鞋</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="//www.yohobuy.com/list/ci141-gd2.html" class="hot">凉鞋/凉拖</a>
+                                            </dd>
+                                        <dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/brands?gender=2,3">热门品牌</a></h3>
+                                        </dt>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/vans-1284.html">VANS</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/ugg-3330.html&#10;">UGG</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/drmartens-1866.html&#10;">Dr.Martens</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/rickowens-1942.html">Rick Owens</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/beffon-952.html">BEFFON</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/xcollection-546.html&#10;">X COLLECTION</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/adidas-1258.html&#10;">adidas Originals</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/nbashoes-2316.html&#10;">NBA</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/reebok-1290.html&#10;">Reebok</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/teva-3480.html">TEVA</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/converse-1252.html&#10;">converse</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="https://www.yohobuy.com/shop/joymario-564.html&#10;">JOY&amp;MARIO快乐玛丽</a>
+                                            </dd>
+                                </dl>
+                                <div class="show-detail show" data-code="e93ce2b407d437bd3a73ef5961c2e73c">
+                                    <a href=""><img src="//img11.static.yhbimg.com/yhb-img01/2018/10/11/13/01af5bdba97f3412b023210265bc8935bd.jpg?imageView2/2/w/337/h/250/q/90"></a>
+                                    <a class="title" href="">人气潮鞋来袭</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contain-third">
+                        <a href="#">包袋</a>
+                        <div class="third-nav-wrapper">
+                            <div class="center-content">
+                                <dl class="category-list"><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci59-gd2.html">包</a></h3>
+                                        </dt><dd>
+                                                <a href="//www.yohobuy.com/list/ci174-gd2.html" class="hot">双肩包</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci176-gd2.html">手拎包/单肩包</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci200-gd2.html">电脑包</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci194-gd2.html">钱包/卡包/手拿包</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci167-gd2.html">腰包</a>
+                                            </dd><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/brands?gender=2,3">热门品牌</a></h3>
+                                        </dt><dd>
+                                                <a href="https://www.yohobuy.com/shop/kipling-3604.html">KIPLING</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/babyghost-1260.html&#10;">BABYGHOST</a>
+                                            </dd></dl><dl class="category-list"><dd>
+                                                <a href="https://www.yohobuy.com/shop/catsonstore-3524.html">CATSON STORE</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/cloudfactory-1428.html&#10;">云朵工厂</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/thesimpsons-3246.html">The Simpsons</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/holymoly-139.html">Holymoly</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/feederstudio-3688.html">Feeder Studio</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/myfunclothes-2330.html">MYFUN</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/preenprink-241.html&#10;">PREEN PRINK</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/muyisi-57.html">目意思</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/dresslab-1570.html&#10;">dress lab</a>
+                                            </dd></dl><dl class="category-list"><dd>
+                                                <a href="https://www.yohobuy.com/shop/solo-2284.html">SOLO</a>
+                                            </dd></dl>
+                                <div class="show-detail show" data-code="91e5413e38dfbc8b87a94e1a3bb5dea3">
+                                    <a href="http://list.yohobuy.com/?gender=2,3&amp;msort=7&amp;order=s_t_desc"><img src="//img10.static.yhbimg.com/yhb-img01/2018/10/11/13/0104de1747b93b827d40e24f0870dda98f.jpg?imageView2/2/w/337/h/250/q/90"></a>
+                                    <a class="title" href="http://list.yohobuy.com/?gender=2,3&amp;msort=7&amp;order=s_t_desc">时髦包袋焕然一新</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contain-third">
+                        <a href="#">配饰其他</a>
+                        <div class="third-nav-wrapper">
+                            <div class="center-content">
+                                <dl class="category-list"><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci76-gd2.html">服配</a></h3>
+                                        </dt><dd>
+                                                <a href="//www.yohobuy.com/list/ci138-gd2.html" class="hot">帽子</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci127-gd2.html">太阳镜/眼镜</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci145-gd2.html">袜子</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci131-gd2.html">手表</a>
+                                            </dd><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci130-gd2.html">首饰</a></h3>
+                                        </dt><dd>
+                                                <a href="//www.yohobuy.com/list/ci616-gd2.html" class="hot">耳钉</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci618-gd2.html">戒指</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci620-gd2.html">手链</a>
+                                            </dd></dl><dl class="category-list"><dd>
+                                                <a href="//www.yohobuy.com/list/ci622-gd2.html">项链</a>
+                                            </dd><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/list/ci133-gd2.html">配饰</a></h3>
+                                        </dt><dd>
+                                                <a href="//www.yohobuy.com/list/ci624-gd2.html">皮带/腰带</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci626-gd2.html">胸针/胸章</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci628-gd2.html" class="hot">手机链/钥匙扣</a>
+                                            </dd><dd>
+                                                <a href="//www.yohobuy.com/list/ci630-gd2.html" class="hot">头饰</a>
+                                            </dd><dt>
+                                        <h3 class=""><a href="//www.yohobuy.com/brands?gender=2,3">热门品牌</a></h3>
+                                        </dt><dd>
+                                                <a href="https://www.yohobuy.com/shop/huanmao-1398.html&#10;">焕懋手表集合店</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/puma-1534.html&#10;">PUMA</a>
+                                            </dd></dl><dl class="category-list"><dd>
+                                                <a href="https://www.yohobuy.com/shop/gemcy-1918.html&#10;">GEMCY</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/bbf-446.html&#10;">BBF</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/mlbwatch-224.html&#10;">MLB WATCH</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/joystone-1336.html&#10;">Joystone玺悦熠辉</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/jonasverus-654.html">JONAS&amp;VERUS唯路时</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/dirtyvelvet-2910.html&#10;">DIRTY VELVET</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/gallet-792.html&#10;">GALLET</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/jnby-20.html">JNBY</a>
+                                            </dd><dd>
+                                                <a href="https://www.yohobuy.com/shop/feo-3332.html&#10;">FEO</a>
+                                            </dd></dl>
+                                <div class="show-detail show" data-code="4c1fa6224127ebffdd589587bf7973b5">
+                                    <a href=""><img src="//img11.static.yhbimg.com/yhb-img01/2018/10/11/13/01248bd70446fe509807fdc1ada5befd16.jpg?imageView2/2/w/337/h/250/q/90"></a>
+                                    <a class="title" href="">潮物点亮街头</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contain-third">
+                        <a href="#">逛</a>
+                    </li>
+                    <li class="contain-third">
+                        <a href="#">sale</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-page product-list-page">
+        <div class="center-content clearfix">
+            <div class="path-nav">
+                <a href="listpage.html" title="GIRLS首页">GIRLS首页</a>
+                <span class="iconfont">&#xe63f;</span>
+                <h1 class="last">女生</h1>
+            </div>
+            <div class="list-left left">
+                <div class="sort-container">
+                    <ul>
+                        <li>
+                            <h2>
+                                <a href="javascript:;" title="全部品类">
+                                    全部品类
+                                </a>
+                            </h2>
+                        </li>
+                        <li class="product-list-nav">
+                            <h3 title="上衣">
+                                <span class="icon-triangle"></span>
+                                上衣
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li>
+                                    <a href="javascript:;" title="全部上衣">
+                                        全部上衣
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="毛衣">
+                                        毛衣
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="卫衣">
+                                        卫衣
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="棉衣">
+                                        棉衣
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="羽绒服">
+                                        羽绒服
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="风衣">
+                                        风衣
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="大衣">
+                                        大衣
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="夹克">
+                                        夹克
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="防风外套">
+                                        防风外套
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="衬衫">
+                                        衬衫
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="背心">
+                                        背心
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="POLO衫">
+                                        POLO衫
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="T恤">
+                                        T恤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="马甲">
+                                        马甲
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="针织衫">
+                                        针织衫
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="套装">
+                                        套装
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="皮衣">
+                                        皮衣
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="西装">
+                                        西装
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="裤装">
+                                <span class="icon-triangle"></span>
+                                裤装
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部裤装">
+                                        全部裤装
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="休闲裤">
+                                        休闲裤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="牛仔裤">
+                                        牛仔裤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="运动裤">
+                                        运动裤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="紧身裤/打底裤">
+                                        紧身裤/打底裤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="短裤">
+                                        短裤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="西裤">
+                                        西裤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="连体裤">
+                                        连体裤
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav">
+                            <h3 title="鞋靴">
+                                <span class="icon-triangle"></span>
+                                鞋靴
+                            </h3>
+                            <ul class="sort-child-list" style="display: none;">
+                                <li class="">
+                                    <a href="javascript:;" title="全部鞋靴">
+                                        全部鞋靴
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="休闲/运动鞋">
+                                        休闲/运动鞋
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="凉鞋/凉拖">
+                                        凉鞋/凉拖
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="时装鞋">
+                                        时装鞋
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="靴子">
+                                        靴子
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="保养护理">
+                                        保养护理
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="裙装">
+                                <span class="icon-triangle"></span>
+                                裙装
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部裙装">
+                                        全部裙装
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="半身裙">
+                                        半身裙
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="连衣裙">
+                                        连衣裙
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="包类">
+                                <span class="icon-triangle"></span>
+                                包类
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部包类">
+                                        全部包类
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="双肩包">
+                                        双肩包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="单肩包/手拎包">
+                                        单肩包/手拎包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="钱包/卡包">
+                                        钱包/卡包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="手包/钥匙包">
+                                        手包/钥匙包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="腰包">
+                                        腰包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="邮差包">
+                                        邮差包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="电脑包">
+                                        电脑包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="储物包">
+                                        储物包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="环保包">
+                                        环保包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="包配">
+                                        包配
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="tote包">
+                                        tote包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="旅行包">
+                                        旅行包
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="旅行箱">
+                                        旅行箱
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="服配">
+                                <span class="icon-triangle"></span>
+                                服配
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部服配">
+                                        全部服配
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="帽子">
+                                        帽子
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="太阳镜/眼镜">
+                                        太阳镜/眼镜
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="首饰">
+                                        首饰
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="手表">
+                                        手表
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="配饰">
+                                        配饰
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="袜子">
+                                        袜子
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="手套">
+                                        手套
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="围巾/丝巾/披肩">
+                                        围巾/丝巾/披肩
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="内衣/家居服">
+                                <span class="icon-triangle"></span>
+                                内衣/家居服
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部内衣/家居服">
+                                        全部内衣/家居服
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="文胸">
+                                        文胸
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="内裤">
+                                        内裤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="家居服">
+                                        家居服
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="美妆/个护">
+                                <span class="icon-triangle"></span>
+                                美妆/个护
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部美妆/个护">
+                                        全部美妆/个护
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="香水彩妆">
+                                        香水彩妆
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="面部护肤">
+                                        面部护肤
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="身体护理">
+                                        身体护理
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="口腔护理">
+                                        口腔护理
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="数码3C">
+                                <span class="icon-triangle"></span>
+                                数码3C
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部数码3C">
+                                        全部数码3C
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="影音娱乐">
+                                        影音娱乐
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="手机配件">
+                                        手机配件
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="智能设备">
+                                        智能设备
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="电脑配件">
+                                        电脑配件
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="居家生活">
+                                <span class="icon-triangle"></span>
+                                居家生活
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部居家生活">
+                                        全部居家生活
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="清洁用品">
+                                        清洁用品
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="家装软饰">
+                                        家装软饰
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="生活用品">
+                                        生活用品
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="家纺">
+                                        家纺
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="玩具礼品">
+                                <span class="icon-triangle"></span>
+                                玩具礼品
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部玩具礼品">
+                                        全部玩具礼品
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1316-gd2.html" title="益智/DIY">
+                                        益智/DIY
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1318-gd2.html" title="玩具模型">
+                                        玩具模型
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1320-gd2.html" title="礼品">
+                                        礼品
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1314-gd2.html" title="火机烟具">
+                                        火机烟具
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="文具杂志">
+                                <span class="icon-triangle"></span>
+                                文具杂志
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部文具杂志">
+                                        全部文具杂志
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="学生文具">
+                                        学生文具
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1326-gd2.html" title="本册/便签">
+                                        本册/便签
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="product-list-nav ">
+                            <h3 title="厨具餐具">
+                                <span class="icon-triangle"></span>
+                                厨具餐具
+                            </h3>
+                            <ul class="sort-child-list">
+                                <li class="">
+                                    <a href="javascript:;" title="全部厨具餐具">
+                                        全部厨具餐具
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:;" title="刀剪菜板">
+                                        刀剪菜板
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1368-gd2.html" title="餐具">
+                                        餐具
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1364-gd2.html" title="厨房配件">
+                                        厨房配件
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1366-gd2.html" title="茶具/咖啡具">
+                                        茶具/咖啡具
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/list/ci1370-gd2.html" title="水具酒具">
+                                        水具酒具
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-right right">
+                <div class="filter-box">
+                    <div class="checked-conditions section">
+                        <span class="title">已选条件：</span>
+                        <div class="attr-content clearfix">
+                                <a class="tag" href="/list/?category_id=18,31,25&amp;limit=40" name="GIRLS" itemtype="gender">
+                                        GIRLS
+                                    <i class="close iconfont">&#xe85c;</i>
+                                </a>
+    
+                            <a class="clear-checked" href="/list/" rel="nofollow">清空筛选条件</a>
+                        </div>
+                    </div>
+                    <div class="channel section">
+                        <span class="title">性别：</span>
+                        <div class="attr-content clearfix">
+                            <a class="attr " href="/list/gd1.html?category_id=18,31,25&amp;limit=40" name="BOYS">
+                                BOYS
+                            </a>
+                            <a class="attr checked" href="/list/gd2.html?category_id=18,31,25&amp;limit=40" name="GIRLS">
+                                GIRLS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="brand section" id="yo-filter-brands">
+                        <span class="title">品牌：</span>
+                        <div class="attr-content">
+                            <ul class="default clearfix">
+                                <li class="attr ">
+                                    <a href="/list/bd232-gd2.html?category_id=18,31,25&amp;limit=40" title="HIPANDA">HIPANDA</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd3624-gd2.html?category_id=18,31,25&amp;limit=40" title="Levi's官方旗舰店">Levi's官方旗舰店</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd1026-gd2.html?category_id=18,31,25&amp;limit=40" title="JNBY">JNBY</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd1697-gd2.html?category_id=18,31,25&amp;limit=40" title="banana baby">banana baby</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd1499-gd2.html?category_id=18,31,25&amp;limit=40" title="LOFTSHINE">LOFTSHINE</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd1388-gd2.html?category_id=18,31,25&amp;limit=40" title="MO&amp;Co. edition">MO&amp;Co. edition</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd1387-gd2.html?category_id=18,31,25&amp;limit=40" title="MO&amp;Co.">MO&amp;Co.</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd3146-gd2.html?category_id=18,31,25&amp;limit=40" title="MATERIAL GIRL">MATERIAL GIRL</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd2166-gd2.html?category_id=18,31,25&amp;limit=40" title="ROCOCO洛可可">ROCOCO洛可可</a>
+                                </li>
+                                <li class="attr ">
+                                    <a href="/list/bd1082-gd2.html?category_id=18,31,25&amp;limit=40" title="SIBYL OF NO.17">SIBYL OF NO.17</a>
+                                </li>
+                            </ul>       
+                            <div class="brand-opt">
+                                    <span id="brand-more" class="brand-more">
+                                        <em>更多</em>
+                                        <i class="iconfont">&#xe63c;</i>
+                                    </span>
+        
+                                    <span id="brand-multi" class="multi-select">多选 +</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people section">
+                        <span class="title">人群：</span>       
+                        <div class="attr-content clearfix">
+                            <a class="attr " href="" name="成人" rel="nofollow">成人</a>
+                            <a class="attr " href="" name="大童11-15岁" rel="nofollow">大童11-15岁</a>
+                            <a class="attr " href="" name="中童7-10岁" rel="nofollow">中童7-10岁</a>
+                            <a class="attr " href="" name="小童2-6岁" rel="nofollow">小童2-6岁</a>
+                            <a class="attr " href="" name="婴童0-12个月" rel="nofollow">婴童0-12个月</a>
+                        </div>
+                    </div>
+                    <div class="price section">
+                        <span class="title">价格：</span>
+                        <div class="attr-content clearfix">
+                                <a class="attr" href="" name="￥0-309" rel="nofollow">￥0-309</a>
+                                <a class="attr" href="" name="￥310-619" rel="nofollow">￥310-619</a>
+                                <a class="attr" href="" name="￥620-1899" rel="nofollow">￥620-1899</a>
+                                <a class="attr" href="" name="￥1899以上" rel="nofollow">￥1899以上</a>   
+                            <div class="ud-price-range">
+                                ¥
+                                <input type="text" class="min limit" value="">
+                                <span class="price-sep">-</span>
+                                <input type="text" class="max limit" value="">   
+                                <button class="price-sure">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="color section">
+                        <span class="title">颜色：</span>
+                        <div class="attr-content clearfix">
+                            <a class="attr" href="" name="红色">
+                                <i class="color-block" style="background: #ee0000"></i>
+                                红色
+                            </a>
+                            <a class="attr" href="" name="橙色">
+                                <i class="color-block" style="background: #ff5c01"></i>
+                                橙色
+                            </a>
+                            <a class="attr" href="" name="银色">
+                                <i class="color-block" style="background: url(//static.yohobuy.com/images/color_p2.png)"></i>
+                                银色
+                            </a>
+                            <a class="attr" href="" name="金色">
+                                <i class="color-block" style="background: #FFD83D"></i>
+                                金色
+                            </a>
+                            <a class="attr" href="" name="彩色">
+                                <i class="color-block" style="background: url(//img02.static.yohobuy.com/adpic/2014/01/27/13/0272608508f09e2bf7eb5543bf5cc70d31.png)"></i>
+                                彩色
+                            </a>
+                            <a class="attr" href="" name="棕卡其">
+                                <i class="color-block" style="background: #8b5402"></i>
+                                棕卡其
+                            </a>
+                            <a class="attr" href="" name="白色">
+                                <i class="color-block" style="background: #FFFFFF"></i>
+                                白色
+                            </a>
+                            <a class="attr" href="" name="黑色">
+                                <i class="color-block" style="background: #333333"></i>
+                                黑色
+                            </a>
+                            <a class="attr" href="" name="灰色">
+                                <i class="color-block" style="background: #b9b7af"></i>
+                                灰色
+                            </a>
+                            <a class="attr" href="" name="棕色">
+                                <i class="color-block" style="background: #8b5402"></i>
+                                棕色
+                            </a>
+                            <a class="attr" href="" name="绿色">
+                                <i class="color-block" style="background: #47ba17"></i>
+                                绿色
+                            </a>
+                            <a class="attr" href="" name="蓝色">
+                                <i class="color-block" style="background: #0000fe"></i>
+                                蓝色
+                            </a>
+                            <a class="attr" href="" name="紫色">
+                                <i class="color-block" style="background: #710098"></i>
+                                紫色
+                            </a>
+                            <a class="attr" href="" name="黄色">
+                                <i class="color-block" style="background: #ffeb00"></i>
+                                黄色
+                            </a>
+                        </div>
+                    </div>
+                    <div class="size section " data-load="true">
+                        <span class="title">尺码：</span>           
+                        <div class="attr-content size-content clearfix">
+                            <div class="size-block clearfix">
+                                <a class="attr " href="" name="42码">42码</a>
+                                <a class="attr " href="" name="S">S</a>
+                                <a class="attr " href="" name="S/M">S/M</a>
+                                <a class="attr " href="" name="M">M</a>
+                                <a class="attr " href="" name="M/L">M/L</a>
+                                <a class="attr " href="" name="L" rel="nofollow">L</a>
+                                <a class="attr " href="" name="L/XL" rel="nofollow">L/XL</a>
+                                <a class="attr " href="" name="XL" rel="nofollow">XL</a>
+                                <a class="attr " href="" name="XXL" rel="nofollow">XXL</a>
+                                <a class="attr " href="" name="XXXL" rel="nofollow">XXXL</a>
+                                <a class="attr " href="" name="XXXXL" rel="nofollow">XXXXL</a>
+                                <a class="attr " href="" name="XXXXXL" rel="nofollow">XXXXXL</a>
+                                <a class="attr " href="" name="XXS" rel="nofollow">XXS</a>
+                                <a class="attr " href="" name="XS" rel="nofollow">XS</a>
+                                <a class="attr " href="" name="1" rel="nofollow">1</a>
+                                <a class="attr " href="" name="2" rel="nofollow">2</a>
+                                <a class="attr " href="" name="3" rel="nofollow">3</a>
+                                <a class="attr " href="" name="4" rel="nofollow">4</a>
+                                <a class="attr " href="" name="8" rel="nofollow">8</a>
+                                <a class="attr " href="" name="9" rel="nofollow">9</a>
+                                <a class="attr " href="" name="10" rel="nofollow">10</a>
+                                <a class="attr " href="" name="26" rel="nofollow">26</a>
+                                <a class="attr " href="" name="27" rel="nofollow">27</a>
+                                <a class="attr " href="" name="28" rel="nofollow">28</a>
+                                <a class="attr " href="" name="29" rel="nofollow">29</a>
+                                <a class="attr " href="" name="30" rel="nofollow">30</a>
+                                <a class="attr " href="" name="32" rel="nofollow">32</a>
+                                <a class="attr " href="" name="34" rel="nofollow">34</a>
+                                <a class="attr " href="" name="36" rel="nofollow">36</a>
+                                <a class="attr " href="" name="38" rel="nofollow">38</a>
+                                <a class="attr " href="" name="40" rel="nofollow">40</a>
+                                <a class="attr " href="" name="42" rel="nofollow">42</a>
+                                <a class="attr " href="" name="44" rel="nofollow">44</a>
+                                <a class="attr " href="" name="46" rel="nofollow">46</a>
+                                <a class="attr " href="" name="48" rel="nofollow">48</a>
+                                <a class="attr " href="" name="50" rel="nofollow">50</a>
+                                <a class="attr " href="" name="52" rel="nofollow">52</a>
+                                <a class="attr " href="" name="100" rel="nofollow">100</a>
+                                <a class="attr " href="" name="110" rel="nofollow">110</a>
+                                <a class="attr " href="" name="120" rel="nofollow">120</a>
+                                <a class="attr " href="" name="130" rel="nofollow">130</a>
+                                <a class="attr " href="" name="140" rel="nofollow">140</a>
+                                <a class="attr " href="" name="23英寸" rel="nofollow">23英寸</a>
+                                <a class="attr " href="" name="24英寸" rel="nofollow">24英寸</a>
+                                <a class="attr " href="" name="25英寸" rel="nofollow">25英寸</a>
+                                <a class="attr " href="" name="26英寸" rel="nofollow">26英寸</a>
+                                <a class="attr " href="" name="27英寸" rel="nofollow">27英寸</a>
+                                <a class="attr " href="" name="28英寸" rel="nofollow">28英寸</a>
+                                <a class="attr " href="" name="29英寸" rel="nofollow">29英寸</a>
+                                <a class="attr " href="" name="30英寸" rel="nofollow">30英寸</a>
+                                <a class="attr " href="" name="31英寸" rel="nofollow">31英寸</a>
+                                <a class="attr " href="" name="32英寸" rel="nofollow">32英寸</a>
+                                <a class="attr " href="" name="33英寸" rel="nofollow">33英寸</a>
+                                <a class="attr " href="" name="34英寸" rel="nofollow">34英寸</a>
+                                <a class="attr " href="" name="35英寸" rel="nofollow">35英寸</a>
+                                <a class="attr " href="" name="36英寸" rel="nofollow">36英寸</a>
+                                <a class="attr " href="" name="38英寸" rel="nofollow">38英寸</a>
+                                <a class="attr " href="" name="40英寸" rel="nofollow">40英寸</a>
+                                <a class="attr " href="" name="XS/S" rel="nofollow">XS/S</a>
+                                <a class="attr " href="" name="0码" rel="nofollow">0码</a>
+                                <a class="attr " href="" name="1码" rel="nofollow">1码</a>
+                                <a class="attr " href="" name="2码" rel="nofollow">2码</a>
+                                <a class="attr " href="" name="3码" rel="nofollow">3码</a>
+                                <a class="attr " href="" name="4码" rel="nofollow">4码</a>
+                                <a class="attr " href="" name="5码" rel="nofollow">5码</a>
+                                <a class="attr " href="" name="7码" rel="nofollow">7码</a>
+                                <a class="attr " href="" name="9码" rel="nofollow">9码</a>
+                                <a class="attr " href="" name="29/30" rel="nofollow">29/30</a>
+                                <a class="attr " href="" name="27/28" rel="nofollow">27/28</a>
+                            </div>
+                        </div>   
+                        <span id="size-more" class="size-more">
+                            <em>更多</em>
+                            <i class="iconfont">&#xe63c;</i>
+                        </span>
+                    </div>
+                    <div class="senior section">
+                        <span class="title">高级选项：</span>        
+                        <div class="attr-content">
+                            <ul class="clearfix senior-attr-wrap">
+                                <li class="attr">
+                                    风格
+                                    <span class="iconfont">&#xe63c;</span>
+                                    <div class="senior-up-icon"></div>
+                                </li>
+                                <li class="attr">
+                                    厚度
+                                    <span class="iconfont">&#xe63c;</span>
+                                    <div class="senior-up-icon"></div>
+                                </li>
+                                <li class="attr">
+                                    袖长
+                                    <span class="iconfont">&#xe63c;</span>
+                                    <div class="senior-up-icon"></div>
+                                </li>
+                                <li class="attr">
+                                    领型
+                                    <span class="iconfont">&#xe63c;</span>
+                                    <div class="senior-up-icon"></div>
+                                </li>
+                                <li class="attr">
+                                    衣长
+                                    <span class="iconfont">&#xe63c;</span>
+                                    <div class="senior-up-icon"></div>
+                                </li>
+                                <li class="attr">
+                                    袖型
+                                    <span class="iconfont">&#xe63c;</span>
+                                    <div class="senior-up-icon"></div>
+                                </li>
+                            </ul>
+                            <div class="senior-sub-wrap">
+                                <div class="senior-sub hide" data-attr="style" data-url="/list/ci18-gd2.html?style={seat}">
+                                    <div class="senior-baffle"></div>
+                                    <div class="senior-content">
+                                            <span class="multi-select">多选 +</span>
+                                        <ul class="clearfix check-container">
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1000.html" name="简约">
+                                                            <span class="iconfont checkbox" data-id="1000"></span>
+                                                        <span>简约</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1097.html" name="中性">
+                                                            <span class="iconfont checkbox" data-id="1097"></span>
+                                                        <span>中性</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1107.html" name="高街">
+                                                            <span class="iconfont checkbox" data-id="1107"></span>
+                                                        <span>高街</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st990.html" name="户外">
+                                                            <span class="iconfont checkbox" data-id="990"></span>
+                                                        <span>户外</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st991.html" name="街头">
+                                                            <span class="iconfont checkbox" data-id="991"></span>
+                                                        <span>街头</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1106.html" name="性感">
+                                                            <span class="iconfont checkbox" data-id="1106"></span>
+                                                        <span>性感</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st992.html" name="趣味">
+                                                            <span class="iconfont checkbox" data-id="992"></span>
+                                                        <span>趣味</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1105.html" name="前卫">
+                                                            <span class="iconfont checkbox" data-id="1105"></span>
+                                                        <span>前卫</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1104.html" name="甜美">
+                                                            <span class="iconfont checkbox" data-id="1104"></span>
+                                                        <span>甜美</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st993.html" name="美式">
+                                                            <span class="iconfont checkbox" data-id="993"></span>
+                                                        <span>美式</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1004.html" name="英伦">
+                                                            <span class="iconfont checkbox" data-id="1004"></span>
+                                                        <span>英伦</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1102.html" name="可爱">
+                                                            <span class="iconfont checkbox" data-id="1102"></span>
+                                                        <span>可爱</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1003.html" name="日系">
+                                                            <span class="iconfont checkbox" data-id="1003"></span>
+                                                        <span>日系</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st995.html" name="军事">
+                                                            <span class="iconfont checkbox" data-id="995"></span>
+                                                        <span>军事</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st996.html" name="朋克">
+                                                            <span class="iconfont checkbox" data-id="996"></span>
+                                                        <span>朋克</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st1100.html" name="原创">
+                                                            <span class="iconfont checkbox" data-id="1100"></span>
+                                                        <span>原创</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st999.html" name="学院">
+                                                            <span class="iconfont checkbox" data-id="999"></span>
+                                                        <span>学院</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2-st989.html" name="运动">
+                                                            <span class="iconfont checkbox" data-id="989"></span>
+                                                        <span>运动</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="btns">
+                                            <button class="multi-select-ok dis">确定</button>
+                                            <button class="multi-select-cancel">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="senior-sub hide" data-attr="" data-url="">
+                                    <div class="senior-baffle"></div>
+                                    <div class="senior-content">
+                                        <ul class="clearfix check-container">
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=827_4631" name="中" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4631"></span>
+                                                        <span>中</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=827_4630" name="薄" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4630"></span>
+                                                        <span>薄</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=827_4632" name="厚" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4632"></span>
+                                                        <span>厚</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=827_4633" name="加厚" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4633"></span>
+                                                        <span>加厚</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="btns">
+                                            <button class="multi-select-ok dis">确定</button>
+                                            <button class="multi-select-cancel">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="senior-sub hide" data-attr="" data-url="">
+                                    <div class="senior-baffle"></div>
+                                    <div class="senior-content">
+                                        <ul class="clearfix check-container">
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=825_4626" name="长袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4626"></span>
+                                                        <span>长袖</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=825_4624" name="短袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4624"></span>
+                                                        <span>短袖</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=825_5439" name="5分袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5439"></span>
+                                                        <span>5分袖</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=825_4625" name="7分袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4625"></span>
+                                                        <span>7分袖</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="btns">
+                                            <button class="multi-select-ok dis">确定</button>
+                                            <button class="multi-select-cancel">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="senior-sub hide" data-attr="" data-url="">
+                                    <div class="senior-baffle"></div>
+                                    <div class="senior-content">
+                                        <ul class="clearfix check-container">
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=787_4438" name="圆领" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4438"></span>
+                                                        <span>圆领</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=787_4439" name="v领" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4439"></span>
+                                                        <span>v领</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=787_4443" name="高领" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4443"></span>
+                                                        <span>高领</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=787_5554" name="一字领" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5554"></span>
+                                                        <span>一字领</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=787_5359" name="立领" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5359"></span>
+                                                        <span>立领</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=787_4442" name="polo领" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4442"></span>
+                                                        <span>polo领</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=787_4440" name="u领" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4440"></span>
+                                                        <span>u领</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="btns">
+                                            <button class="multi-select-ok dis">确定</button>
+                                            <button class="multi-select-cancel">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="senior-sub hide" data-attr="" data-url="">
+                                    <div class="senior-baffle"></div>
+                                    <div class="senior-content">
+                                        <ul class="clearfix check-container">
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=788_4445" name="适中" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4445"></span>
+                                                        <span>适中</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=788_4444" name="短款" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4444"></span>
+                                                        <span>短款</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=788_4446" name="长款" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="4446"></span>
+                                                        <span>长款</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="btns">
+                                            <button class="multi-select-ok dis">确定</button>
+                                            <button class="multi-select-cancel">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="senior-sub hide" data-attr="" data-url="">
+                                    <div class="senior-baffle"></div>
+                                    <div class="senior-content">
+                                        <ul class="clearfix check-container">
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=981_5371" name="正常" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5371"></span>
+                                                        <span>正常</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=981_5367" name="喇叭袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5367"></span>
+                                                        <span>喇叭袖</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=981_5369" name="小飞袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5369"></span>
+                                                        <span>小飞袖</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=981_5363" name="灯笼袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5363"></span>
+                                                        <span>灯笼袖</span>
+                                                    </a>
+                                                </li>
+                                                <li class="attr ">
+                                                    <a href="/list/ci18-gd2.html?standard=981_5365" name="蝙蝠袖" rel="nofollow">
+                                                            <span class="iconfont checkbox" data-id="5365"></span>
+                                                        <span>蝙蝠袖</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="btns">
+                                            <button class="multi-select-ok dis">确定</button>
+                                            <button class="multi-select-cancel">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sort-pager">
+                    <a class="sort-type active" href="/list/ci18-gd2.html?order=" rel="nofollow">
+                        默认
+                    </a>
+                    <a class="sort-type" href="/list/ci18-gd2.html?order=h_v_desc" rel="nofollow">
+                        人气
+                        <span class="iconfont">&#xe6b5;</span>
+                    </a>
+                    <a class="sort-type" href="/list/ci18-gd2.html?order=s_t_desc" rel="nofollow">
+                        新品
+                        <span class="iconfont">&#xe60c;</span>
+                    </a>
+                    <a class="sort-type" href="/list/ci18-gd2.html?order=s_p_desc" rel="nofollow">
+                        价格
+                        <span class="iconfont">&#xe60c;</span>
+                    </a>
+                    <a class="sort-type" href="/list/ci18-gd2.html?order=p_d_desc" rel="nofollow">
+                        折扣
+                        <span class="iconfont">&#xe60c;</span>
+                    </a>
+                    <a class="checks" href="/list/ci18-gd2.html?new=Y" rel="nofollow">
+                        <span class="iconfont">&#xe629;</span>
+                        新品
+                    </a>
+                    <a class="checks" href="/list/ci18-gd2.html?specialoffer=Y" rel="nofollow">
+                        <span class="iconfont">&#xe629;</span>
+                        打折
+                    </a>
+                    <a class="checks" href="/list/ci18-gd2.html?specialoffer=Y" rel="nofollow">
+                        <span class="iconfont">&#xe629;</span>
+                        限量
+                    </a>
+                    <div class="pager-wrap">
+                        <div class="page-count">
+                            <span id="count-per-page">
+                                40
+                                <i class="iconfont">&#xe6b5;</i>
+                            </span>
+                            每页
+                            <ul>
+                                <li>
+                                    <a href="/list/ci18-gd2.html?limit=40" rel="nofollow">40</a>
+                                </li>
+                                <li>
+                                    <a href="/list/ci18-gd2.html?limit=100" rel="nofollow">100</a>
+                                </li>
+                                <li>
+                                    <a href="/list/ci18-gd2.html?limit=200" rel="nofollow">200</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="page-orient">
+                            <span class="dis-icon iconfont">&#xe667;</span>
+                            <span>
+                                <i>1</i>/369
+                            </span>
+                            <a href="/list/ci18-gd2.html?page=2" rel="nofollow">
+                                <span class="iconfont">&#xe63f;</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+
+<!-- 公共尾部 -->
+<div class="public-footer">
+    <div class="footerbottom">
+        <div class="promise">
+            <div class="center-content clearfix">
+                <div class="left">
+                    <span class="iconfont rgbf">&#xe640;</span>
+                    <span class="red">100%</span>
+                    <span class="rgbf">品牌正品</span>
+                </div>
+                <div class="left">
+                    <span class="iconfont rgbf">&#xe691;</span>
+                    <span class="red">7天</span>
+                    <span class="rgbf">无理由退换货</span>
+                </div>
+                <div class="left">
+                    <span class="iconfont rgbf">&#xe6f6;</span>
+                    <span class="red">便捷</span>
+                    <span class="rgbf">在线客服</span>
+                </div>
+                <div class="right footer-right">
+                    <input id="subscriber-box" class="top" name="subscriberBox" value="订阅我们的邮件">
+                    <a id="subscriber-btn" href="" class="iconfont rgbf">&#xe697;</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-help">
+            <div class="center-content clearfix">
+                <div class="left">
+                    <ul class="clearfix">
+                        <li class="left">
+                           <p>
+                                <span>新手专区</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">注册登录</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">购物结算</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">下单支付</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">收货评价</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>会员中心</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">会员制度</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">会员优惠</a>
+                            </p>
+                            <p>
+                                <a href="" target="_blank">账户管理</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">密码管理</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>购物指南</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">发票</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">尺码对照</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">尺码解读</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">商品咨询</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>支付方式</span>
+                            </p>
+                            <p>
+                                <a href="" target="_blank">在线支付</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">货到付款</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">分期支付</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">优惠券、有货币</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>配送方式</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">配送说明</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">运费说明</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">验货签收</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">收货样品</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>售后服务</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">退换货政策</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">退换货流程</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">投诉与建议</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">在线客服</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>APP常见问题</span>
+                            </p>
+                            <p>
+                                <a  target="_blank">IPhone版</a>
+                            </p>
+                            <p>
+                                <a  target="_blank">Android版</a>
+                            </p>
+                            <p>
+                                <a  target="_blank">wap版</a>
+                            </p>
+                            <p>
+                                <a target="_blank">IPAD版</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-link">
+            <div class="center-content clearfix">
+                <div class="about-us">
+                    <div class="left-flag">
+                        <a class="govicon" href="http://www.jsdsgsxt.gov.cn/mbm/entweb/elec/certView.shtml?siteId=f2b6e3b8d18241afb8dd6cadf7f15406" target="_blank">
+                            <!-- <div class="govimg"></div> -->
+                            <img src="img/ebsIcon.png" alt="">
+                        </a>
+                        <a href="https://ss.knet.cn/verifyseal.dll?sn=e14021832010046477dka7000000&amp;ct=df&amp;a=1&amp;pa=0.5902942178957805" target="_blank">
+                            <img src="img/credit-flag3.png">
+                        </a>
+                        <a href="http://www.isc.org.cn/" target="_blank" rel="nofollow">
+                            <img src="img/isc2.png">
+                        </a>
+                    </div>
+                    <p class="links">
+                        <a href="girls.html">返回首页</a>
+                        <span>|</span>
+                        <a href="girls.html">YOHO!BUY 有货</a>
+                        <span>|</span>
+                        <a href="girls.html">新力传媒</a>
+                        <span>|</span>
+                        <a href="girls.html">联系我们</a>
+                        <span>|</span>
+                        <a href="girls.html">商家入驻</a>
+                        <span>|</span>
+                        <a href="girls.html">隐私条款</a>
+                        <span>|</span>
+                        <a href="girls.html">友情链接</a>
+                        <span>|</span>
+                        <a href="girls.html">潮流品牌大全</a>
+                        <span>|</span>
+                        <a href="girls.html">潮流品类大全</a>
+                        <span>|</span>
+                        <a href="girls.html">潮流产品大全</a>
+                        <span>|</span>
+                        <a href="girls.html">潮流资讯</a>
+                        <span>|</span>
+                        <a href="girls.html">穿衣搭配(男生版)</a>
+                        <span>|</span>
+                        <a href="girls.html">穿衣搭配(女生版)</a>
+                        <span>|</span>
+                        <a href="girls.html">潮流人气</a>
+                        <span>|</span>
+                        <a href="girls.html">潮流潮品</a>
+                        <span>|</span>
+                        <a href="girls.html">潮流视频</a>
+                        <span>|</span>
+                        <a class="police" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010502010132" rel="nofollow">苏公网安备 32010502010132号</a>
+                    </p>
+                </div>
+                <div class="copyright">
+                    <p>
+                        CopyRight © 2007-2018 南京新与力文化传播有限公司
+                        <a class="rbg6" href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">苏ICP备09011225号</a>
+                        NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="right-floating-layer min">
+        <div class="qrcode-hover-box" >
+            <a class="layer-box qrcode-download-right" id="adf">
+                <span class="qrcode-img">&nbsp;</span>
+            </a>
+            <div class="download-app-box">
+                <div class="download-app-left left">
+                    <div class="qr-code-img we-chat-code">
+                        <img src="img/qr-wenle-wechat.png">
+                    </div>
+                    <h5 class="qr-words">微信扫一扫</h5>
+                    <h5 class="qr-words">关注公众号，送球鞋</h5>
+                </div>
+                <div class="download-app-right right">
+                    <div class="qr-code-img mobile-code">
+                        <img src="img/qr-wenle.png">
+                    </div>
+                    <h5 class="qr-words">下载手机客户端</h5>
+                    <h5 class="qr-words qr-more">
+                        <a target="_blank">更多客户端下载</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="layer-box return-top">
+            <span class="iconfont">&#xe647;</span>
+        </div>
+    </div>
+</div>
+ <!-- 右侧固定二维码 -->
+
+    <div class="code-down-box">
+        <div><img src="img/cover-qr-large.png" alt=""></div>
+        <h5>下载手机客户端</h5>
+        <i class="iconfont">&#xe73e;</i>
+    </div>
+</body>
+</html>
+<script src="script/common.js"></script>
+<script src="script/listpage.js"></script>

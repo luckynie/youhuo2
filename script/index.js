@@ -130,6 +130,9 @@ function showPage(data){
                 </div>
                 <div class="commodity-brands imgopacity clearfix">
                 </div>
+                <div class="loading">
+                <a href="http://list.yohobuy.com/new?gender=2,3&amp;order=s_t_desc" target="_blank">查看更多</a>
+                </div>
             </div>` ;
      $(".home-page").append(str3);
 	//console.log(container.innerHTML) 
