@@ -24,3 +24,6 @@ function _(selector){
 function switchArray(args){
 	return Array.prototype.slice.call(args);
 }
+function _removeClass(dom , className){
+	return  dom.className = dom.className.replace(className, "");
+}

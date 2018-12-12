@@ -68,9 +68,9 @@ input {
     padding-left: 0;
     width: 0;
     height: 0;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #fff #fff #fff #000;
+    border-top: 6px solid #fff;
+    border-left: 6px solid #000;
+    border-bottom: 6px solid #fff;
     position: absolute;
     top: 50%;
     margin-top: -6px;
@@ -99,6 +99,12 @@ input {
   height: 22px;
   line-height: 22px;
   margin-left: 10px; }
+
+.goods-container {
+  height: auto;
+  padding: 25px 0 0;
+  position: relative;
+  width: 980px; }
 
 .product-page .list-right {
   width: 970px; }
@@ -212,9 +218,7 @@ input {
       border: 1px solid #ccc;
       margin-bottom: -6px;
       margin-right: 5px;
-      background-size: 100% !important;
-      background-repeat: no-repeat !important;
-      background-position: 50% !important; }
+      background-size: 100% !important; }
     .product-page .list-right .filter-box .size {
       position: relative; }
       .product-page .list-right .filter-box .size .size-content {
@@ -235,16 +239,18 @@ input {
       position: relative; }
       .product-page .list-right .filter-box .senior-attr-wrap .attr:hover {
         text-decoration: none; }
+        .product-page .list-right .filter-box .senior-attr-wrap .attr:hover .senior-up-icon {
+          visibility: visible; }
     .product-page .list-right .filter-box .senior-up-icon {
       position: relative;
       width: 100%;
       height: 9px;
       z-index: 3;
-      margin-left: -11px;
+      margin-left: -2px;
       visibility: hidden;
       background: url(../listpageimg/senior-up.png) no-repeat;
       background-position: 50% 0;
-      top: -1px; }
+      top: 1px; }
     .product-page .list-right .filter-box .senior-sub {
       box-sizing: border-box;
       position: absolute;
@@ -287,8 +293,7 @@ input {
       font-size: 14px;
       margin-right: 20px;
       cursor: pointer;
-      outline: none;
-      font-family: Microsoft YaHei,sans-serif; }
+      outline: none; }
     .product-page .list-right .filter-box .multi-select-ok.dis {
       background: #ccc; }
   .product-page .list-right .sort-pager {
@@ -361,6 +366,60 @@ input {
           color: red; }
         .product-page .list-right .sort-pager .pager-wrap .page-orient a .iconfont {
           font-size: 14px; }
+  .product-page .list-right .goods-container {
+    height: auto;
+    padding-top: 25px;
+    position: relative;
+    width: 980px; }
+    .product-page .list-right .goods-container .good-info {
+      margin-bottom: 35px;
+      width: 235px;
+      margin-right: 10px;
+      float: left; }
+      .product-page .list-right .goods-container .good-info .tag-container {
+        font-size: 12px;
+        height: 22px;
+        line-height: 22px; }
+      .product-page .list-right .goods-container .good-info .good-detail-img {
+        height: 315px;
+        width: 100%;
+        position: relative; }
+        .product-page .list-right .goods-container .good-info .good-detail-img .good-thumb {
+          display: block;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          color: #fff; }
+          .product-page .list-right .goods-container .good-info .good-detail-img .good-thumb img {
+            width: 235px;
+            height: 315px; }
+      .product-page .list-right .goods-container .good-info .good-detail-text {
+        height: 80px;
+        color: #222;
+        font-size: 12px;
+        text-align: left;
+        overflow: hidden; }
+        .product-page .list-right .goods-container .good-info .good-detail-text .brand a {
+          color: #666;
+          line-height: 1.5;
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .product-page .list-right .goods-container .good-info .good-detail-text .market-price {
+          text-decoration: line-through;
+          color: #999;
+          margin-right: 15px; }
+      .product-page .list-right .goods-container .good-info .good-detail-text > a {
+        margin-top: 16px;
+        line-height: 1.5;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .product-page .list-right .goods-container .good-info .good-detail-text > .price {
+        margin-top: 5px;
+        line-height: 22px; }
 
 .product-list-page .filter-box .brand .attr-content {
   max-width: 730px; }

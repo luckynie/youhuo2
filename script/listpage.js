@@ -6,10 +6,12 @@ function showListnav(){
     })
     $(".sort-container li:has(ul)").click(function(){
         if($(this).children("ul").css('display') == "none"){
-            $(this).children(".icon-triangle").css("border-color","#000 #fff #fff #fff");
+            $(this).addClass("active").siblings().removeClass("active");
+            //$(this).children(".icon-triangle").css("transform","rotate(90deg)");
             $(this).children("ul").show(500);
         }else{
-            $(this).children(".icon-triangle").css("border-color","#fff #fff #fff #000")
+            $(this).removeClass("active");
+            //$(this).children(".icon-triangle").css("transform","rotate(-90deg)")
             $(this).children("ul").hide(500); 
         }
     })
@@ -41,6 +43,7 @@ showSize();
 function showSenior(){
     $(".senior-attr-wrap li").mouseenter(function(){
         $(this).children(".iconfont").hide();
+        $(this).children(".senior-up-icon").css("visibility","visible");
         //console.log($(this).index())
         //console.log( $(".senior-sub-wrap .senior-sub").eq($(this).index()));
         $(".senior-sub-wrap .senior-sub").eq($(this).index()).show();
@@ -48,7 +51,56 @@ function showSenior(){
     })
     $(".senior-attr-wrap li").mouseleave(function(){
         $(this).children(".iconfont").show();
+        $(this).children(".senior-up-icon").css("visibility","hidden");
         $(".senior-sub-wrap .senior-sub").eq($(this).index()).hide();
     })
 }
 showSenior();
+
+
+function showGoods(){
+    $.ajax({
+        type:"get",
+            url:"json/goods.json",
+            async:true,
+            cache:true,
+            success:function(res){ 
+               // console.log(res[0])
+                renderJson(res);
+            }
+    });
+	//pictureSort(container.children)
+}
+showGoods();
+function renderJson(json){
+    json.forEach(function(item){ 
+        var str = ` <div class="good-info">
+                        <div class="tag-container clearfix">
+                        </div>
+                        <div class="good-detail-img">
+                            <a class="good-thumb" href="detailpage.html?id=${item.id}" title="${item.introduction}" target="_blank">
+                                <img class="lazy" src="${item.src}">
+                            </a>        
+                        </div>
+                        <div class="good-detail-text ">
+                            <a href="javascript:;" target="_blank" title="${item.introduction}">${item.introduction}</a>
+                            <p class="brand">
+                                <a href="javascript:;" title="${item.introduction}">${item.name}</a>
+                            </p>
+                            <p class="price ">
+                                <span class="market-price">${item.original}</span>
+                                <span class="sale-price prime-cost">${item.price}</span>
+                            </p>
+                            <div class="hideList hide">
+                                <li data-src="${item.src}"></li>
+                            </div>
+                        </div>
+                    </div>`;
+        $(".goods-container").append(str);
+    })
+}
+
+$(".goods-container").on("click",".good-info",setWindowame);
+function setWindowame(){
+    
+}
