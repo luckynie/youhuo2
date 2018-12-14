@@ -51,7 +51,7 @@ function renderPage(json){
     </div>`
     
     //$(".home-page").append(str)
-    $(".addfirstbox").html(str)
+    $(".addfirstbox").append(str)
     })
 }
 
