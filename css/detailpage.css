@@ -122,6 +122,8 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     cursor: pointer;
     margin-bottom: 15px;
     border: 2px solid #fff; }
+  .product-detail-page .main .active {
+    border: 2px solid #000; }
   .product-detail-page .main .infos {
     width: 585px; }
   .product-detail-page .main .name {
@@ -309,6 +311,3 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
       margin-right: 5px;
       color: #ccc;
       font-size: 20px; }
-
-.product-detail-page .main .thumb.active {
-  border: 2px solid #000; }

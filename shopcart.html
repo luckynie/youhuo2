@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="css/shopcart.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_956665_wiug2fg1p3a.css">
+    <title>shopcart</title>
+</head>
+<body>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/jquery.nav.js"></script>
+    <!-- public-header-js -->
+    <div id="public-header" class="public-header">
+        <div class="header-topWrap clearfix">
+            <div class="center-content">
+                <div class="topcontent-L left">
+                    <span class="icon-hamburger"></span>
+                    <a href="index.html">YOHO!BUY 有货</a>
+                    <ul class="yoho-group-list">
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YOHO!" data-cn="集团官网">YOHO!</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YOHO!BOYS" data-cn="男生潮流">YOHO!BOYS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YOHO!GIRLS" data-cn="女生潮流">YOHO!GIRLS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="Mars" data-cn="新鲜好去处">Mars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="yoho-group" data-en="YO'HOOD" data-cn="潮流嘉年华">YO'HOOD</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topcontent-M left">
+                    <span class="exclamation-mark"></span>
+                    <a href="//www.yohobuy.com/help/detail?id=150&amp;contId=147" rel="nofollow" target="_blank">
+                        关于防诈骗的重要提醒
+                    </a>
+                </div>
+                <div class="topcontent-R right">
+                    <ul>
+                        <li id="loginBox">
+                            <span class="hi">Hi~</span>
+                            [ <a id="signin-url" href="login.html" class="loginbar" rel="nofollow">请登录</a> ]
+                            [ <a id="reg-url" href="register.html" class="registbar" rel="nofollow">免费注册</a> ]
+                        </li>
+                        <li class="myyoho" id="myYohoBox">
+                            <span class="tag-seprate">|</span>
+                            <a href="#" rel="nofollow">MY有货</a>
+                            <span class="icon-bottomarrow"></span>
+                            <div class="simple-user-center"></div>
+                        </li>
+                        <li class="myorder">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-papers"></span>
+                            <a href="shopcar.html" rel="nofollow">我的订单</a>
+                        </li>
+                        <li class="mycollect">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-heart"></span>
+                            <a href="shopcar.html" rel="nofollow">我的收藏</a>
+                        </li>
+                        <li class="message">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-mail"></span>
+                            <a href="#" rel="nofollow">消息</a>
+                        </li>
+                        <li class="help nav-drop-down-container">
+                            <span class="tag-seprate">|</span>
+                            <span class="iconfont">&#xe656;</span>
+                            <a href="#">客户服务</a>
+                            <ul class="nav-drop-down">
+                                <li>
+                                    <a href="//www.yohobuy.com/service/client" rel="nofollow" target="_blank">在线客服</a>
+                                </li>
+                                <li>
+                                    <a href="//www.yohobuy.com/help" rel="nofollow">帮助中心</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="we-chat download-code">
+                            <span class="tag-seprate">|</span>
+                            <span class="iconfont">&#xe620;</span>
+                            <a href="">关注有货</a>
+                            <div class="download-app-box">
+                                <div class="we-chat-img code-img"></div>
+                                <h5 class="qr-words">微信扫一扫</h5>
+                                <h5 class="qr-words">关注公众号，送球鞋</h5>
+                            </div>
+                        </li>
+                        <li class="phoneapp download-code" id="phoneApp">
+                            <span class="tag-seprate">|</span>
+                            <span class="icon-phone"></span>
+                            <a href="//www.yohobuy.com/download/app" rel="nofollow">手机版</a>
+                            <div class="download-app-box">
+                                <div class="qr-img code-img"></div>
+                                <h5 class="qr-words">下载手机客户端</h5>
+                                <h5 class="qr-more">
+                                    <a href="javascript:void(0);">更多客户端</a>
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-cart clearfix">
+        <div class="order-edit order-cart" id="cart-page">
+            <div class="order-title cart-page-title order-ensure-title">
+                <ul class="shopping-step">
+                    <li class="step first focus">查看购物车</li>
+                    <li class="step">填写订单</li>
+                    <li class="step last">付款，完成购买</li>
+                </ul>        
+            </div>
+            <div class="cartnew-tips">
+                <div class="tipsbox" id="tipsbox">
+                    <a href="javascript:void(0);" class="btn-close" title="关闭"></a>
+                    <strong>温馨提示：</strong>1. 选购单中的商品不保留库存，请及时结算。 2. 商品的价格、相关活动信息及库存以订单提交时为准。
+                </div>
+            </div>
+            <div class="order-pay">
+                <div class="pay-wapper">
+                    <div class="cart-title">
+                        <p class="left" style="width:6%;">
+                            <input class="cart-item-check-title cart-item-check selectAll" type="checkbox"></input>&nbsp;&nbsp;全选
+                        </p>
+                        <p style="width:35%">商品信息</p>
+                        <p style="width:14%">单价</p>
+                        <p style="width:15%;">数量</p>
+                        <p style="width:16%;">小计</p>
+                        <p class="right" style="width:11.8%;">操作</p>
+                    </div>
+                    <div class="goodslist">
+                        <!-- <div class="promotion-pool">
+                            <div class="cart-table">
+                                <ul class="table table-group">
+                                    <li class="pre-sell-box tr">
+                                        <div class="pay-pro td " style="width: 368px;">
+                                            <input class="cart-item-check iconfont " type="checkbox">
+                                            <a class="pay-pro-icon" data-role="item-img" href="//www.yohobuy.com/product/52001590.html" target="_blank">
+                                                <img src="//img13.static.yhbimg.com/goodsimg/2018/11/15/11/02ed486b0f0e52a070bcbd14c82fe3a8ee.jpg?imageMogr2/thumbnail/64x88/background/d2hpdGU=/position/center/quality/90">
+                                            </a>
+                                            <p class="pay-pro-info">
+                                                <a href="//www.yohobuy.com/product/52001590.html" target="_blank">
+                                                    LUNA LIMITED  气质随性复古黑色直筒牛仔裤
+                                                </a>
+                                                <em class="pay-pro-detail">
+                                                    <span>
+                                                        <b title="黑">颜色：黑</b>
+                                                        尺码：S<i class="iconfont"></i>
+                                                    </span>
+                                                </em>
+                                            </p>
+                                        </div>
+                                        <div class="product-price td " style="width:148px;">
+                                            <p class="p-product-price">¥399.00</p>
+                                        </div>
+                                        <div style="width:128px;" class="adjust-cart-num td">
+                                            <div class="cart-num-cont">
+                                                <span class="minus cart-num-btn disabled">
+                                                    <i class="icon-minus">-</i>
+                                                </span>
+                                                <input type="text" value="1" readonly="readonly">
+                                                <span class="plus cart-num-btn "><i class="icon-plus">+</i></span>
+                                            </div> 
+                                        </div>
+                                        <div style="width:160px;" class="sub-total red td">
+                                            ¥399.00
+                                        </div>
+                                        <div style="width:100px;" class="cart-operation td">
+                                            <span class="cart-del-btn" data-role="cart-del-btn">删除</span>
+                                            <span class="cart-col-btn" data-role="cart-mov2fav-btn">移入收藏</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="cart-fixed-submit">
+                <div class="cart-fixed-wrap">
+                    <div class="center-content clearfix">
+                        <div class="fixed-option">
+                            <input class="cart-item-check selectAll" type="checkbox">
+                            <span class="check-all-sum">全选</span>
+                            <a class="delAll delete-all-sel" href="javascript:void(0);">删除选中商品</a>
+                            <a class="removeAll remove-all-2fav" href="javascript:void(0);">移入收藏夹</a>
+                            <a class="emptyDisabled clean-all-disable" href="javascript:void(0);">清空失效商品</a>
+                        </div>
+                        <p class="select-num">已选商品<strong class="ins">0</strong>件</p>
+                        <div class="price-sum">
+                            <p class="sum">应付金额（不含邮费）：<strong><kbd>¥</kbd><span id="oTotle">0.00</span></strong></p>
+                            <p class="offer">活动优惠：¥ 0.00</p>
+                        </div>
+                        <a href="javascript:void(0);" id="Y_SubmitBtn" class="btn-account right btn-account-disable">去结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- 公共尾部 -->
+<div class="public-footer">
+    <div class="footerbottom">
+        <div class="promise">
+            <div class="center-content clearfix">
+                <div class="left">
+                    <span class="iconfont rgbf">&#xe640;</span>
+                    <span class="red">100%</span>
+                    <span class="rgbf">品牌正品</span>
+                </div>
+                <div class="left">
+                    <span class="iconfont rgbf">&#xe691;</span>
+                    <span class="red">7天</span>
+                    <span class="rgbf">无理由退换货</span>
+                </div>
+                <div class="left">
+                    <span class="iconfont rgbf">&#xe6f6;</span>
+                    <span class="red">便捷</span>
+                    <span class="rgbf">在线客服</span>
+                </div>
+                <div class="right footer-right">
+                    <input id="subscriber-box" class="top" name="subscriberBox" value="订阅我们的邮件">
+                    <a id="subscriber-btn" href="" class="iconfont rgbf">&#xe697;</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-help">
+            <div class="center-content clearfix">
+                <div class="left">
+                    <ul class="clearfix">
+                        <li class="left">
+                           <p>
+                                <span>新手专区</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">注册登录</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">购物结算</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">下单支付</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">收货评价</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>会员中心</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">会员制度</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">会员优惠</a>
+                            </p>
+                            <p>
+                                <a href="" target="_blank">账户管理</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">密码管理</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>购物指南</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">发票</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">尺码对照</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">尺码解读</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">商品咨询</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>支付方式</span>
+                            </p>
+                            <p>
+                                <a href="" target="_blank">在线支付</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">货到付款</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">分期支付</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">优惠券、有货币</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>配送方式</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">配送说明</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">运费说明</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">验货签收</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">收货样品</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>售后服务</span>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">退换货政策</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">退换货流程</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">投诉与建议</a>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">在线客服</a>
+                            </p>
+                        </li>
+                        <li class="left">
+                            <p>
+                                <span>APP常见问题</span>
+                            </p>
+                            <p>
+                                <a  target="_blank">IPhone版</a>
+                            </p>
+                            <p>
+                                <a  target="_blank">Android版</a>
+                            </p>
+                            <p>
+                                <a  target="_blank">wap版</a>
+                            </p>
+                            <p>
+                                <a target="_blank">IPAD版</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-link">
+            <div class="center-content clearfix">
+                <div class="about-us">
+                    <div class="left-flag">
+                        <a class="govicon" href="http://www.jsdsgsxt.gov.cn/mbm/entweb/elec/certView.shtml?siteId=f2b6e3b8d18241afb8dd6cadf7f15406" target="_blank">
+                            <!-- <div class="govimg"></div> -->
+                            <img src="img/ebsIcon.png" alt="">
+                        </a>
+                        <a href="https://ss.knet.cn/verifyseal.dll?sn=e14021832010046477dka7000000&amp;ct=df&amp;a=1&amp;pa=0.5902942178957805" target="_blank">
+                            <img src="img/credit-flag3.png">
+                        </a>
+                        <a href="http://www.isc.org.cn/" target="_blank" rel="nofollow">
+                            <img src="img/isc2.png">
+                        </a>
+                    </div>
+                    <p class="links">
+                        <a href="index.html">返回首页</a>
+                        <span>|</span>
+                        <a href="index.html">YOHO!BUY 有货</a>
+                        <span>|</span>
+                        <a href="index.html">新力传媒</a>
+                        <span>|</span>
+                        <a href="index.html">联系我们</a>
+                        <span>|</span>
+                        <a href="index.html">商家入驻</a>
+                        <span>|</span>
+                        <a href="index.html">隐私条款</a>
+                        <span>|</span>
+                        <a href="index.html">友情链接</a>
+                        <span>|</span>
+                        <a href="index.html">潮流品牌大全</a>
+                        <span>|</span>
+                        <a href="index.html">潮流品类大全</a>
+                        <span>|</span>
+                        <a href="index.html">潮流产品大全</a>
+                        <span>|</span>
+                        <a href="index.html">潮流资讯</a>
+                        <span>|</span>
+                        <a href="index.html">穿衣搭配(男生版)</a>
+                        <span>|</span>
+                        <a href="index.html">穿衣搭配(女生版)</a>
+                        <span>|</span>
+                        <a href="index.html">潮流人气</a>
+                        <span>|</span>
+                        <a href="index.html">潮流潮品</a>
+                        <span>|</span>
+                        <a href="index.html">潮流视频</a>
+                        <span>|</span>
+                        <a class="police" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010502010132" rel="nofollow">苏公网安备 32010502010132号</a>
+                    </p>
+                </div>
+                <div class="copyright">
+                    <p>
+                        CopyRight © 2007-2018 南京新与力文化传播有限公司
+                        <a class="rbg6" href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">苏ICP备09011225号</a>
+                        NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="right-floating-layer min">
+        <div class="qrcode-hover-box" >
+            <a class="layer-box qrcode-download-right" id="adf">
+                <span class="qrcode-img">&nbsp;</span>
+            </a>
+            <div class="download-app-box">
+                <div class="download-app-left left">
+                    <div class="qr-code-img we-chat-code">
+                        <img src="img/qr-wenle-wechat.png">
+                    </div>
+                    <h5 class="qr-words">微信扫一扫</h5>
+                    <h5 class="qr-words">关注公众号，送球鞋</h5>
+                </div>
+                <div class="download-app-right right">
+                    <div class="qr-code-img mobile-code">
+                        <img src="img/qr-wenle.png">
+                    </div>
+                    <h5 class="qr-words">下载手机客户端</h5>
+                    <h5 class="qr-words qr-more">
+                        <a target="_blank">更多客户端下载</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="layer-box return-top">
+            <span class="iconfont">&#xe647;</span>
+        </div>
+    </div>
+</div>
+ <!-- 右侧固定二维码 -->
+
+    <div class="code-down-box">
+        <div><img src="img/cover-qr-large.png" alt=""></div>
+        <h5>下载手机客户端</h5>
+        <i class="iconfont">&#xe73e;</i>
+    </div>
+</body>
+</html>
+<script src="script/common.js"></script>
+<script src="script/shopcart.js"></script>

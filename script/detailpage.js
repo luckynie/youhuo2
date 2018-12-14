@@ -21,13 +21,26 @@ function getJson(req,id){
         var str2="";
         var str3="";
         if(item.id===id){
+            var str=`<a href="javascript:;">GIRLS首页</a>
+                    <span class="iconfont">&#xe63f;</span>
+                    <a href="javascript:;" title="${item.classname[0]}">${item.classname[0]}</a>
+                    <span class="iconfont">&#xe63f;</span>
+                    <a href="javascript:;" title="${item.classname[1]}">${item.classname[1]}</a>
+                    <span class="iconfont">&#xe63f;</span>
+                    <span class="last">${item.introduction}</span>`
+            $(".path-nav").html(str);
             str1 = `<img id="img-show" class="img-show" src="${item.src}">
                     <div class="magnifier move-object" id="mainMask"></div> 
                     <div id="max" class="magnifier max">
                         <img id="bigImg" src="${item.src}">
                     </div>`;
             for(var i=0;i<item.list.length;i++){
-                str2 += `<img class="thumb " src="${item.list[i]}">`;
+                if(i===0){
+                    str2 += `<img class="thumb active" src="${item.list[i]}">`
+                }else{
+                    str2 += `<img class="thumb " src="${item.list[i]}">`;
+                }
+                //str2 += `<img class="thumb " src="${item.list[i]}">`;
             } 
             $("#min-img").html(str1);
             $(".thumb-wrap").html(str2);
@@ -39,7 +52,7 @@ function getJson(req,id){
                     <br>
                     <span class="promotion-price">
                         <span class="title">促销价：</span>
-                        <span class="price">${item.price}</span>
+                        <span class="price">￥${item.price}</span>
                     </span>
                     <span class="desc">
                         <span class="promotion">8.0折</span>
@@ -83,7 +96,7 @@ function showExpand(){
 		$("#bigImg").css({"left":-bigL,"top":-bigT})
     })
     
-    $(".thumb-wrap img").eq(0).addClass("active");
+
 	$(".thumb-wrap").on("mouseenter","img",function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		var newSrc = $(this)[0].src;
@@ -93,7 +106,9 @@ function showExpand(){
 	})
 }
 showExpand();
-
+$(".size li").click(function(){
+    $(this).css({"background":"#000","color":"#fff"}).siblings().css({"background":"#fff","color":"#000"});
+})
 function  addReduce(){ 
     var num=1;
 	$("#increase").click(function(){
@@ -112,6 +127,12 @@ function  addReduce(){
 	})
 }
 addReduce();
+$(".buy-btn").mouseenter(function(){
+    $(this).css("background","rgba(233,38,1,.8)")
+})
+$(".buy-btn").mouseleave(function(){
+    $(this).css("background","#d0021b")
+})
 
 $("#buyTocart").click(function(){
     var id=$(this).children("span").data("id");
@@ -119,7 +140,20 @@ $("#buyTocart").click(function(){
     var nowMsg=findJson(id)[0];
     //console.log(nowMsg)
     addData(nowMsg,id);
+    showCount();
+    if(confirm("成功添加此商品，是否查看购物车")){
+        window.location.href="shopcart.html"
+    }
 })
+function showCount(){
+    var arr = getCart();
+    var count=0;
+    arr.forEach(function(item){
+        count +=Number(item.count);
+    })
+    $(".goods-num-tip").html(count);
+}
+
 function addData(nowMsg,id){
     var sNowMsg = JSON.stringify(nowMsg); 
     if(!localStorage.cart){
@@ -135,7 +169,7 @@ function addData(nowMsg,id){
     }
     for(var i = 0 ; i < aMsg.length ; i ++){
         if(aMsg[i].id === id){
-            aMsg[i].count=Number($("#quantity").html());
+            aMsg[i].count +=Number($("#quantity").html());
         }
     }
     localStorage.setItem("cart",JSON.stringify(aMsg));
@@ -150,6 +184,7 @@ function findJson(id){
 function hasIid(aMsg,id){
     for(var i = 0 ; i < aMsg.length ; i ++){
           if(aMsg[i].id === id){
+                //aMsg.count++;
                 return true;
           }
     }

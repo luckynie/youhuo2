@@ -56,7 +56,7 @@ function renderPage(json){
 
 
 jsonp("https://list.mogujie.com/search").then((res)=>{
-	console.log(res.result.wall.list[0])
+	//console.log(res.result.wall.list[0])
 	var goodsJson = res.result.wall.list;
 	showPage(goodsJson);
 	//pictureSort(container.children)

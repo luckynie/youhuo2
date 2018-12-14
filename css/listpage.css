@@ -75,7 +75,7 @@ input {
     top: 50%;
     margin-top: -6px;
     left: 0;
-    transition: transform .3s; }
+    transition: 0.3s; }
 
 .product-page .sort-child-list {
   display: none; }
@@ -423,3 +423,26 @@ input {
 
 .product-list-page .filter-box .brand .attr-content {
   max-width: 730px; }
+
+.foot-pager {
+  padding: 20px 0;
+  font-size: 12px;
+  color: #6a6a6a;
+  border-top: 1px solid #eaeceb; }
+  .foot-pager .pager {
+    float: right;
+    font-size: 12px; }
+    .foot-pager .pager a {
+      height: 24px;
+      padding: 0 9px;
+      line-height: 24px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 8px;
+      color: #222; }
+    .foot-pager .pager a.cur {
+      color: #fff;
+      background-color: #222; }
+    .foot-pager .pager .cur {
+      color: #fff;
+      background-color: #222; }
