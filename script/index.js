@@ -50,7 +50,8 @@ function renderPage(json){
         </div>
     </div>`
     
-    $(".home-page").append(str)
+    //$(".home-page").append(str)
+    $(".addfirstbox").html(str)
     })
 }
 
@@ -91,7 +92,8 @@ function showPage(data){
                     <div class="commodity-brands imgopacity clearfix">
                     </div>
                 </div>` ;
-    $(".home-page").append(str);
+    //$(".home-page").append(str);
+    $(".addmiddlebox").html(str)
     data.forEach((item)=>{ 
 		str2 += `
                 <li>
@@ -134,7 +136,8 @@ function showPage(data){
                 <a href="http://list.yohobuy.com/new?gender=2,3&amp;order=s_t_desc" target="_blank">查看更多</a>
                 </div>
             </div>` ;
-     $(".home-page").append(str3);
+     //$(".home-page").append(str3);
+     $(".addlastbox").html(str3)
 	//console.log(container.innerHTML) 
 }
 
