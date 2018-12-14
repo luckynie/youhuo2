@@ -302,7 +302,7 @@
       height: 50px;
       line-height: 50px;
       background-color: #e0e0e0; }
-    .shop-cart .cart-fixed-submit .fixed .cart-fixed-wrap {
+    .shop-cart .cart-fixed-submit .fixed.cart-fixed-wrap {
       position: fixed;
       left: 0;
       bottom: 0;

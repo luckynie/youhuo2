@@ -14,7 +14,7 @@
 		"price":"549",
 		"original":"¥499" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":2,
@@ -31,7 +31,7 @@
 		"price":"399",
 		"original":"¥1099" ,
         "classname":["裤装","牛仔裤"],
-        "count":1
+        "count":0
     },
     {
         "id":3,
@@ -48,7 +48,7 @@
 		"price":"279",
 		"original":"¥538" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":4,
@@ -63,7 +63,7 @@
 		"price":"329",
 		"original":"¥359" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":5,
@@ -80,7 +80,7 @@
 		"price":"899",
 		"original":"¥2299" ,
         "classname":["上衣","羽绒服"],
-        "count":1
+        "count":0
     },
     {
         "id":6,
@@ -97,7 +97,7 @@
 		"price":"189",
 		"original":"¥378" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":7,
@@ -112,7 +112,7 @@
 		"price":"369",
 		"original":"¥399" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":8,
@@ -126,7 +126,7 @@
 		"price":"249",
 		"original":"¥499" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":9,
@@ -143,7 +143,7 @@
 		"price":"279",
 		"original":"¥558" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":10,
@@ -160,7 +160,7 @@
 		"price":"249",
 		"original":"¥499" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":11,
@@ -177,7 +177,7 @@
 		"price":"249",
 		"original":"¥499" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":12,
@@ -195,7 +195,7 @@
 		"price":"249",
 		"original":"¥499" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
 	},
 	{
         "id":13,
@@ -212,7 +212,7 @@
 		"price":"169",
 		"original":"¥378" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
 	{
         "id":14,
@@ -229,7 +229,7 @@
 		"price":"169",
 		"original":"¥378" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
 	{
         "id":15,
@@ -246,7 +246,7 @@
 		"price":"169",
 		"original":"¥378" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
 	{
         "id":16,
@@ -263,7 +263,7 @@
 		"price":"169",
 		"original":"¥378" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
     },
     {
         "id":17,
@@ -278,7 +278,7 @@
 		"price":"369",
 		"original":"¥399" ,
         "classname":["裤装","长裤"],
-        "count":1
+        "count":0
 	},
 	{
         "id":18,
@@ -293,7 +293,7 @@
 		"price":"549",
 		"original":"¥499" ,
         "classname":["上衣","夹克"],
-        "count":1
+        "count":0
 	},
 	{
         "id":19,
@@ -308,7 +308,7 @@
 		"price":"549",
 		"original":"¥499" ,
         "classname":["上衣","卫衣"],
-        "count":1
+        "count":0
 	},
 	{
         "id":20,
@@ -322,7 +322,7 @@
 		"price":"479",
 		"original":"¥599" ,
         "classname":["上衣","夹克"],
-        "count":1
+        "count":0
     }
 	
 ]

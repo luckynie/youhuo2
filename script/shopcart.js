@@ -67,8 +67,13 @@ $(".goodslist").on("click",".delBtn",function(){
                 localStorage.setItem("cart",JSON.stringify(arr));
                // $(this).parents(".promotion-pool").remove();
               //  window.location.reload();
-                renderData();
-                result();
+                if(getCart()==0){
+                    window.location.reload();
+                }else{
+                    renderData();
+                    result();
+                }
+                
             }
         }
     })
@@ -138,3 +143,16 @@ $(".selectAll").click(function(){
         result();
     } 
 }) 
+
+window.onscroll=function(){
+    var boxH = $(".goodslist .promotion-pool:last-child").offset().top-$(".goodslist .promotion-pool:last-child").height()-300;
+    var scrollH = document.body.scrollTop || document.documentElement.scrollTop;
+    // console.log(boxH)
+    // console.log(scrollH)
+    if(boxH > scrollH){
+        $(".cart-fixed-wrap").addClass("fixed")
+    }else{
+        $(".cart-fixed-wrap").removeClass("fixed")
+    }
+}
+

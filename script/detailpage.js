@@ -184,7 +184,7 @@ function findJson(id){
 function hasIid(aMsg,id){
     for(var i = 0 ; i < aMsg.length ; i ++){
           if(aMsg[i].id === id){
-                //aMsg.count++;
+                //aMsg[i].count++;
                 return true;
           }
     }
